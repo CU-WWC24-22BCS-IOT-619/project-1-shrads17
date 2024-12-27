@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <title>Vite + React + TS</title>
+
+    <style>
+      /* Apply full height and allow for scrolling */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://wallpaperaccess.com/full/2620633.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        flex-direction: column; /* Stack elements vertically */
+        min-height: 100%; /* Ensure content can grow beyond the viewport */
+        padding: 20px; /* Add space around the content */
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+      }
+
+      #root {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 1000px; /* Increase the width for more space */
+        text-align: center;
+        overflow: auto; /* Allow scrolling if content overflows */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
